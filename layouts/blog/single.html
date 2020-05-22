@@ -24,6 +24,16 @@
                             {{ .ReadingTime }} minute read
                         </span>
 
+			<div class="d-none d-md-inline tags">
+                            <ul class="list-unstyled d-inline">
+                                {{ range .Params.categories }}
+                                    <li class="d-inline middot">
+                                        <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                                    </li>
+                                {{ end }}
+                            </ul>
+                        </div>
+			
                         <div class="d-none d-md-inline tags">
                             <ul class="list-unstyled d-inline">
                                 {{ range .Params.tags }}
