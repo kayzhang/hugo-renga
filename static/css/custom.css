@@ -170,7 +170,9 @@ author {
 .content .markdown code, .content .markdown pre {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9rem;
-    background-color: #f7f7f7;
+    /* Kai's change: delete the background-color for code preview */
+    /* This background will unexpectedly rewrite the color for different highlight style */
+    /* background-color: #f7f7f7; */
 }
 
 .content .markdown code {
