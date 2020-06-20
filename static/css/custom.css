@@ -169,7 +169,11 @@ author {
 
 .content .markdown code, .content .markdown pre {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 0.9rem;
+
+    /* Kai's change: delete the font-size for code preview */
+    /* This font-size will unexpectedly make code in headings too small */
+    /* font-size: 0.9rem; */
+    
     /* Kai's change: delete the background-color for code preview */
     /* This background will unexpectedly rewrite the color for different highlight style */
     /* background-color: #f7f7f7; */
